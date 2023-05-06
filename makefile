@@ -20,3 +20,6 @@ endif
 # Install the Backstage CLI
 	yarn global add @backstage/cli
 	yarn global add concurrently
+
+new-app:
+	npx @backstage/create-app@latest
