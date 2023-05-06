@@ -1,0 +1,1 @@
+echo "gh codespace ports 3000:public 7007:public -c $CODESPACE_NAME" >> ~/.bashrc
