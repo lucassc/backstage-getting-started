@@ -7,7 +7,7 @@ This repository contains information on the prerequisites you need to have in or
 
 ### Fedora
 
-If you use Fedora, run:
+If you are running (Fedora, Debian or Ubuntu) , run:
 
 ```BASH
 sudo make
