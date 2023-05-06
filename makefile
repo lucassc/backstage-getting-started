@@ -9,6 +9,7 @@ ifeq ($(os),$(filter $(os),ubuntu debian))
 	curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 	echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 	sudo apt-get update && sudo apt-get install yarn
+	. /usr/local/share/nvm/nvm.sh && nvm use 18
 endif
 ifeq ($(os),fedora)
 	sudo dnf install -y nodejs
