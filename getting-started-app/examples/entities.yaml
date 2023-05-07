@@ -39,3 +39,50 @@ spec:
     message ExampleMessage {
       string example = 1;
     };
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-4-infra
+  description: Structure to validate and test desired Azure infrastructure states
+  annotations:
+    github.com/project-slug: lucassc/test-4-infra
+    backstage.io/source-location: url:https://github.com/lucassc/test-4-infra
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  owner: lucasschwendler@hotmail.com
+  lifecycle: experimental
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: aks-workload-identity
+  description: AKS provisioning with OIDC enabled
+  annotations:
+    github.com/project-slug: lucassc/aks-workload-identity
+    backstage.io/source-location: url:https://github.com/lucassc/aks-workload-identity
+    backstage.io/techdocs-ref: url:https://github.com/lucassc/aks-workload-identity/tree/main
+  links:
+    - url: https://nl.devoteam.com/expert-view/authenticating-kubernetes-workloads-with-azure-ad-workload-identity/
+      title: Authenticating Kubernetes Workloads with Azure AD workload identity
+      icon: web
+spec:
+  type: library
+  owner: lucasschwendler@hotmail.com
+  lifecycle: experimental
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: de-devops
+  description: Repositório para materiais de DEVOPS.
+  annotations:
+    gitlab.com/project-slug: letscode-pedagogico/de-devops
+    gitlab.com/project-id: "33790927"
+    backstage.io/source-location: url:https://gitlab.com/letscode-pedagogico/de-devops
+    backstage.io/techdocs-ref: url:https://gitlab.com/letscode-pedagogico/de-devops/-/blob/backstage-teste
+spec:
+  type: library
+  owner: ADA
+  lifecycle: experimental

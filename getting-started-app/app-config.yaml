@@ -46,6 +46,11 @@ integrations:
     # - host: ghe.example.net
     #   apiBaseUrl: https://ghe.example.net/api/v3
     #   token: ${GHE_TOKEN}
+  gitlab:
+    - host: gitlab.com
+      token: ${GITLAB_TOKEN}
+      apiBaseUrl: https://gitlab.com/api/v4
+
 
 proxy:
   ### Example for how to add a proxy endpoint for the frontend.
@@ -95,12 +100,17 @@ catalog:
       rules:
         - allow: [User, Group]
 
-    ## Uncomment these lines to add more example data
+    # Uncomment these lines to add more example data
     # - type: url
     #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/all.yaml
 
-    ## Uncomment these lines to add an example org
+    # Uncomment these lines to add an example org
     # - type: url
     #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/acme-corp.yaml
     #   rules:
     #     - allow: [User, Group]
+
+    # - type: url
+    #   target: https://github.com/backstage/software-templates/blob/main/scaffolder-templates/docs-template/template.yaml
+    #   rules:
+    #     - allow: [Template]
