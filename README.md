@@ -36,6 +36,14 @@ yarn add @backstage/plugin-name
 
 Replace plugin-name with the name of the plugin you want to install.
 
+### Run getting-started-app on Codespaces
+```BASH
+make && \
+cd getting-started-app && \
+yarn install && \
+yarn dev
+```
+
 ### Conclusion
 
 That's it! With Node.js, Yarn, and the Backstage CLI installed, you're ready to start building your own developer portal using Backstage. If you have any questions, feel free to check out the [official documentation](https://backstage.io/docs/overview/what-is-backstage/) or ask for help on the [Backstage community forum](https://github.com/backstage/backstage/discussions).
