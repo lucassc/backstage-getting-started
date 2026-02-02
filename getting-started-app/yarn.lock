@@ -3908,6 +3908,19 @@
     "@backstage/config" "^1.3.3"
     "@backstage/errors" "^1.2.7"
 
+"@backstage/integration-aws-node@^0.1.19":
+  version "0.1.19"
+  resolved "https://registry.yarnpkg.com/@backstage/integration-aws-node/-/integration-aws-node-0.1.19.tgz#76bc66a047ef51ce4663369740c4f421853458e7"
+  integrity sha512-BC+tz65IjD6EhnaMgW+gbsqdvQEx2EroovmCCyHOJN6y6cGpPu8BVrvqPXKWIjUXczOVDffrNUQ7w357N+kbBw==
+  dependencies:
+    "@aws-sdk/client-sts" "^3.350.0"
+    "@aws-sdk/credential-provider-node" "^3.350.0"
+    "@aws-sdk/credential-providers" "^3.350.0"
+    "@aws-sdk/types" "^3.347.0"
+    "@aws-sdk/util-arn-parser" "^3.310.0"
+    "@backstage/config" "^1.3.6"
+    "@backstage/errors" "^1.2.7"
+
 "@backstage/integration-aws-node@^0.1.2", "@backstage/integration-aws-node@^0.1.8", "@backstage/integration-aws-node@^0.1.9":
   version "0.1.9"
   resolved "https://registry.yarnpkg.com/@backstage/integration-aws-node/-/integration-aws-node-0.1.9.tgz#66d6898e855a6a8d495d7d1bcb3bb79b6c61479c"
@@ -3936,7 +3949,7 @@
     "@material-ui/lab" "4.0.0-alpha.61"
     react-use "^17.2.4"
 
-"@backstage/integration@^1.15.0", "@backstage/integration@^1.18.0", "@backstage/integration@^1.18.1", "@backstage/integration@^1.19.2", "@backstage/integration@^1.4.4", "@backstage/integration@^1.7.2", "@backstage/integration@^1.9.0":
+"@backstage/integration@^1.15.0", "@backstage/integration@^1.18.0", "@backstage/integration@^1.18.1", "@backstage/integration@^1.19.1", "@backstage/integration@^1.19.2", "@backstage/integration@^1.4.4", "@backstage/integration@^1.7.2", "@backstage/integration@^1.9.0":
   version "1.19.2"
   resolved "https://registry.yarnpkg.com/@backstage/integration/-/integration-1.19.2.tgz#a68dd9c015dfbbeaab366e1c7d5c49cd2afc7062"
   integrity sha512-7Ct7vBEN6vBDdPOn3Oy9z8VV0mWZvXsW89vOEHWdtZ+TqirPpqhkTMU9vKBg9MROEmuy+rJQfuwz8yQIAojM8Q==
@@ -5078,6 +5091,11 @@
   resolved "https://registry.yarnpkg.com/@backstage/plugin-techdocs-common/-/plugin-techdocs-common-0.1.0.tgz#e225490870ea298a2299d5d18ea331e16c0e1d87"
   integrity sha512-HlRuOdsrQ6cZJa1ClRxTn/b4Rl5qznfjWx8Y7bjIVAHL4j4hGecl8PO7rntqivxPybtQJKUfNxuWyJNkhFJ1Kg==
 
+"@backstage/plugin-techdocs-common@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-techdocs-common/-/plugin-techdocs-common-0.1.1.tgz#b392d6c043149bf5aee552dffeb81ffa98dc0fd8"
+  integrity sha512-MWYW1uVweSJQkI9it2g0xM/4YfykS0GzIlbA3D9YawQIfqQ7UCdsblKHt2Xb3eWLrk+itWrp4IXbW2bUa02DyA==
+
 "@backstage/plugin-techdocs-module-addons-contrib@^1.0.12":
   version "1.0.12"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-techdocs-module-addons-contrib/-/plugin-techdocs-module-addons-contrib-1.0.12.tgz#d886ea8855ecbe9f3024206d81f324c85a8ead58"
@@ -5098,9 +5116,9 @@
     react-use "^17.2.4"
 
 "@backstage/plugin-techdocs-node@^1.12.11":
-  version "1.12.11"
-  resolved "https://registry.yarnpkg.com/@backstage/plugin-techdocs-node/-/plugin-techdocs-node-1.12.11.tgz#a26634434550e39c1f9b8a51350a37e478454eab"
-  integrity sha512-mF6JKudH0YNNLNpeNepLkt0TyqGtjCQP19Q6nwAyoqJv8DJlF8UJlOHFMZvSponfFKNCJsIAjhX5BB1kxxhmVw==
+  version "1.13.11"
+  resolved "https://registry.yarnpkg.com/@backstage/plugin-techdocs-node/-/plugin-techdocs-node-1.13.11.tgz#ab6d2e267e5d59c97ce5fe6f0e41cb107e9ba75d"
+  integrity sha512-4FeAfrCgPTaVmaQL6YvAd+fYkFbLmH8Jhof+Dn7yjoKJU4uRtYIc1efpapHthseG4J0KutzJokFUrdf9yxZdxQ==
   dependencies:
     "@aws-sdk/client-s3" "^3.350.0"
     "@aws-sdk/credential-providers" "^3.350.0"
@@ -5108,22 +5126,22 @@
     "@aws-sdk/types" "^3.347.0"
     "@azure/identity" "^4.0.0"
     "@azure/storage-blob" "^12.5.0"
-    "@backstage/backend-plugin-api" "^1.0.0"
-    "@backstage/catalog-model" "^1.7.0"
-    "@backstage/config" "^1.2.0"
-    "@backstage/errors" "^1.2.4"
-    "@backstage/integration" "^1.15.0"
-    "@backstage/integration-aws-node" "^0.1.12"
-    "@backstage/plugin-search-common" "^1.2.14"
-    "@backstage/plugin-techdocs-common" "^0.1.0"
+    "@backstage/backend-plugin-api" "^1.6.0"
+    "@backstage/catalog-model" "^1.7.6"
+    "@backstage/config" "^1.3.6"
+    "@backstage/errors" "^1.2.7"
+    "@backstage/integration" "^1.19.1"
+    "@backstage/integration-aws-node" "^0.1.19"
+    "@backstage/plugin-search-common" "^1.2.21"
+    "@backstage/plugin-techdocs-common" "^0.1.1"
     "@google-cloud/storage" "^7.0.0"
-    "@smithy/node-http-handler" "^2.1.7"
+    "@smithy/node-http-handler" "^3.0.0"
     "@trendyol-js/openstack-swift-sdk" "^0.0.7"
     "@types/express" "^4.17.6"
     dockerode "^4.0.0"
-    express "^4.17.1"
+    express "^4.22.0"
     fs-extra "^11.2.0"
-    git-url-parse "^14.0.0"
+    git-url-parse "^15.0.0"
     hpagent "^1.2.0"
     js-yaml "^4.0.0"
     json5 "^2.1.3"
@@ -8300,20 +8318,20 @@
   dependencies:
     "@sinonjs/commons" "^2.0.0"
 
-"@smithy/abort-controller@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@smithy/abort-controller/-/abort-controller-2.2.0.tgz#18983401a5e2154b5c94057730024a7d14cbcd35"
-  integrity sha512-wRlta7GuLWpTqtFfGo+nZyOO1vEvewdNR1R4rTxpC8XU6vG/NDyrFBhwLZsqg1NUoR1noVaXJPC/7ZK47QCySw==
-  dependencies:
-    "@smithy/types" "^2.12.0"
-    tslib "^2.6.2"
-
 "@smithy/abort-controller@^3.1.2", "@smithy/abort-controller@^3.1.4":
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/@smithy/abort-controller/-/abort-controller-3.1.4.tgz#7cb22871f7392319c565d1d9ab3cb04e635c4dd9"
   integrity sha512-VupaALAQlXViW3/enTf/f5l5JZYSAxoJL7f0nanhNNKnww6DGCg1oYIuNP78KDugnkwthBO6iEcym16HhWV8RQ==
   dependencies:
     "@smithy/types" "^3.4.2"
+    tslib "^2.6.2"
+
+"@smithy/abort-controller@^3.1.9":
+  version "3.1.9"
+  resolved "https://registry.yarnpkg.com/@smithy/abort-controller/-/abort-controller-3.1.9.tgz#47d323f754136a489e972d7fd465d534d72fcbff"
+  integrity sha512-yiW0WI30zj8ZKoSYNx90no7ugVn3khlyH/z5W8qtKBtVE6awRALbhSG+2SAHA1r6bO/6M9utxYKVZ3PCJ1rWxw==
+  dependencies:
+    "@smithy/types" "^3.7.2"
     tslib "^2.6.2"
 
 "@smithy/config-resolver@^3.0.6", "@smithy/config-resolver@^3.0.8":
@@ -8460,15 +8478,15 @@
     "@smithy/types" "^3.4.2"
     tslib "^2.6.2"
 
-"@smithy/node-http-handler@^2.1.7":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@smithy/node-http-handler/-/node-http-handler-2.5.0.tgz#7b5e0565dd23d340380489bd5fe4316d2bed32de"
-  integrity sha512-mVGyPBzkkGQsPoxQUbxlEfRjrj6FPyA3u3u2VXGr9hT8wilsoQdZdvKpMBFMB8Crfhv5dNkKHIW0Yyuc7eABqA==
+"@smithy/node-http-handler@^3.0.0":
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/@smithy/node-http-handler/-/node-http-handler-3.3.3.tgz#94dbb3f15342b656ceba2b26e14aa741cace8919"
+  integrity sha512-BrpZOaZ4RCbcJ2igiSNG16S+kgAc65l/2hmxWdmhyoGWHTLlzQzr06PXavJp9OBlPEG/sHlqdxjWmjzV66+BSQ==
   dependencies:
-    "@smithy/abort-controller" "^2.2.0"
-    "@smithy/protocol-http" "^3.3.0"
-    "@smithy/querystring-builder" "^2.2.0"
-    "@smithy/types" "^2.12.0"
+    "@smithy/abort-controller" "^3.1.9"
+    "@smithy/protocol-http" "^4.1.8"
+    "@smithy/querystring-builder" "^3.0.11"
+    "@smithy/types" "^3.7.2"
     tslib "^2.6.2"
 
 "@smithy/node-http-handler@^3.2.0", "@smithy/node-http-handler@^3.2.2":
@@ -8498,14 +8516,6 @@
     "@smithy/types" "^1.1.0"
     tslib "^2.5.0"
 
-"@smithy/protocol-http@^3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@smithy/protocol-http/-/protocol-http-3.3.0.tgz#a37df7b4bb4960cdda560ce49acfd64c455e4090"
-  integrity sha512-Xy5XK1AFWW2nlY/biWZXu6/krgbaf2dg0q492D8M5qthsnU2H+UgFeZLbM76FnH7s6RO/xhQRkj+T6KBO3JzgQ==
-  dependencies:
-    "@smithy/types" "^2.12.0"
-    tslib "^2.6.2"
-
 "@smithy/protocol-http@^4.1.1", "@smithy/protocol-http@^4.1.3":
   version "4.1.3"
   resolved "https://registry.yarnpkg.com/@smithy/protocol-http/-/protocol-http-4.1.3.tgz#91d894ec7d82c012c5674cb3e209800852f05abd"
@@ -8514,13 +8524,21 @@
     "@smithy/types" "^3.4.2"
     tslib "^2.6.2"
 
-"@smithy/querystring-builder@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@smithy/querystring-builder/-/querystring-builder-2.2.0.tgz#22937e19fcd0aaa1a3e614ef8cb6f8e86756a4ef"
-  integrity sha512-L1kSeviUWL+emq3CUVSgdogoM/D9QMFaqxL/dd0X7PCNWmPXqt+ExtrBjqT0V7HLN03Vs9SuiLrG3zy3JGnE5A==
+"@smithy/protocol-http@^4.1.8":
+  version "4.1.8"
+  resolved "https://registry.yarnpkg.com/@smithy/protocol-http/-/protocol-http-4.1.8.tgz#0461758671335f65e8ff3fc0885ab7ed253819c9"
+  integrity sha512-hmgIAVyxw1LySOwkgMIUN0kjN8TG9Nc85LJeEmEE/cNEe2rkHDUWhnJf2gxcSRFLWsyqWsrZGw40ROjUogg+Iw==
   dependencies:
-    "@smithy/types" "^2.12.0"
-    "@smithy/util-uri-escape" "^2.2.0"
+    "@smithy/types" "^3.7.2"
+    tslib "^2.6.2"
+
+"@smithy/querystring-builder@^3.0.11":
+  version "3.0.11"
+  resolved "https://registry.yarnpkg.com/@smithy/querystring-builder/-/querystring-builder-3.0.11.tgz#2ed04adbe725671824c5613d0d6f9376d791a909"
+  integrity sha512-u+5HV/9uJaeLj5XTb6+IEF/dokWWkEqJ0XiaRRogyREmKGUgZnNecLucADLdauWFKUNbQfulHFEZEdjwEBjXRg==
+  dependencies:
+    "@smithy/types" "^3.7.2"
+    "@smithy/util-uri-escape" "^3.0.0"
     tslib "^2.6.2"
 
 "@smithy/querystring-builder@^3.0.6":
@@ -8588,17 +8606,17 @@
   dependencies:
     tslib "^2.5.0"
 
-"@smithy/types@^2.12.0":
-  version "2.12.0"
-  resolved "https://registry.yarnpkg.com/@smithy/types/-/types-2.12.0.tgz#c44845f8ba07e5e8c88eda5aed7e6a0c462da041"
-  integrity sha512-QwYgloJ0sVNBeBuBs65cIkTbfzV/Q6ZNPCJ99EICFEdJYG50nGIY/uYXp+TbsdJReIuPr0a0kXmCvren3MbRRw==
-  dependencies:
-    tslib "^2.6.2"
-
 "@smithy/types@^3.4.0", "@smithy/types@^3.4.2":
   version "3.4.2"
   resolved "https://registry.yarnpkg.com/@smithy/types/-/types-3.4.2.tgz#aa2d087922d57205dbad68df8a45c848699c551e"
   integrity sha512-tHiFcfcVedVBHpmHUEUHOCCih8iZbIAYn9NvPsNzaPm/237I3imdDdZoOC8c87H5HBAVEa06tTgb+OcSWV9g5w==
+  dependencies:
+    tslib "^2.6.2"
+
+"@smithy/types@^3.7.2":
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/@smithy/types/-/types-3.7.2.tgz#05cb14840ada6f966de1bf9a9c7dd86027343e10"
+  integrity sha512-bNwBYYmN8Eh9RyjS1p2gW6MIhSO2rl7X9QeLM8iTdcGRP+eDiIWDt66c9IysCc22gefKszZv+ubV9qZc7hdESg==
   dependencies:
     tslib "^2.6.2"
 
@@ -8726,13 +8744,6 @@
     "@smithy/util-buffer-from" "^3.0.0"
     "@smithy/util-hex-encoding" "^3.0.0"
     "@smithy/util-utf8" "^3.0.0"
-    tslib "^2.6.2"
-
-"@smithy/util-uri-escape@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@smithy/util-uri-escape/-/util-uri-escape-2.2.0.tgz#56f5764051a33b67bc93fdd2a869f971b0635406"
-  integrity sha512-jtmJMyt1xMD/d8OtbVJ2gFZOSKc+ueYJZPW20ULW1GOp/q/YIM0wNh+u8ZFao9UaIGz4WoPW8hC64qlWLIfoDA==
-  dependencies:
     tslib "^2.6.2"
 
 "@smithy/util-uri-escape@^3.0.0":
