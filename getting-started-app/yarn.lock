@@ -3937,9 +3937,9 @@
     react-use "^17.2.4"
 
 "@backstage/integration@^1.15.0", "@backstage/integration@^1.18.0", "@backstage/integration@^1.18.1", "@backstage/integration@^1.19.2", "@backstage/integration@^1.4.4", "@backstage/integration@^1.7.2", "@backstage/integration@^1.9.0":
-  version "1.19.2"
-  resolved "https://registry.yarnpkg.com/@backstage/integration/-/integration-1.19.2.tgz#a68dd9c015dfbbeaab366e1c7d5c49cd2afc7062"
-  integrity sha512-7Ct7vBEN6vBDdPOn3Oy9z8VV0mWZvXsW89vOEHWdtZ+TqirPpqhkTMU9vKBg9MROEmuy+rJQfuwz8yQIAojM8Q==
+  version "1.20.1"
+  resolved "https://registry.yarnpkg.com/@backstage/integration/-/integration-1.20.1.tgz#6a3b4eba069734d1abf2f779ce0b6c483051a35b"
+  integrity sha512-rfYMauJAq0BcEPcAm3em/NJC8Gvu3WzRfbgr3onEdjEc0/hEE2ffXmTcMSZykieltV3IAMHwfF2UBm0eV+hOhQ==
   dependencies:
     "@azure/identity" "^4.0.0"
     "@azure/storage-blob" "^12.5.0"
